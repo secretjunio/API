@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Document\\Visual Studio 2017\\API\\WebApp\\WebApp.csproj": {}
+    "E:\\Document\\Visual Studio 2017\\Api\\WebApp\\WebApp.csproj": {}
   },
   "projects": {
-    "E:\\Document\\Visual Studio 2017\\API\\WebApp\\WebApp.csproj": {
+    "E:\\Document\\Visual Studio 2017\\Api\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Document\\Visual Studio 2017\\API\\WebApp\\WebApp.csproj",
-        "projectName": "WebApp",
-        "projectPath": "E:\\Document\\Visual Studio 2017\\API\\WebApp\\WebApp.csproj",
+        "projectUniqueName": "E:\\Document\\Visual Studio 2017\\Api\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "E:\\Document\\Visual Studio 2017\\Api\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\Document\\Visual Studio 2017\\API\\WebApp\\obj\\",
+        "outputPath": "E:\\Document\\Visual Studio 2017\\Api\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,6 +42,90 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Document\\Visual Studio 2017\\Api\\WebApp\\WebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Document\\Visual Studio 2017\\Api\\WebApp\\WebApp.csproj",
+        "projectName": "WebApp",
+        "projectPath": "E:\\Document\\Visual Studio 2017\\Api\\WebApp\\WebApp.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "E:\\Document\\Visual Studio 2017\\Api\\WebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Document\\Visual Studio 2017\\Api\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\Document\\Visual Studio 2017\\Api\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

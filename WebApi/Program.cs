@@ -16,10 +16,10 @@ builder.Services.AddDbContext<EFContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ThienConnect"));
 }); 
 builder.Services.AddEndpointsApiExplorer();
-//builder.Services.AddTransient<IWeatherRepository, WeatherRepository>();
-//builder.Services.AddTransient<IRoleRepository, RoleRepository>();
-//builder.Services.AddTransient<IAccountRepository, AccountRepository>();
-//builder.Services.AddTransient<IProductRepository, ProductRepository>();
+builder.Services.AddTransient<IWeatherRepository, WeatherRepository>();
+builder.Services.AddTransient<IRoleRepository, RoleRepository>();
+builder.Services.AddTransient<IAccountRepository, AccountRepository>();
+builder.Services.AddTransient<IProductRepository, ProductRepository>();
 
 
 builder.Services.AddHttpContextAccessor();

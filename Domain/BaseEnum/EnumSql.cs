@@ -1,4 +1,4 @@
-﻿namespace WebApi.BaseEnum
+﻿namespace BaseEnum
 {
     public enum EnumSql 
     {
