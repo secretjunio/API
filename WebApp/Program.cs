@@ -1,16 +1,24 @@
-using WebApi.Insfracstructure.Persistance.IRepository;
-using WebApi.Insfracstructure.Persistance.Repository;
+using Microsoft.EntityFrameworkCore;
+using Domain.Insfracstructure.DBContext;
+using Domain.Insfracstructure.Persistance.IRepository;
+using Domain.Insfracstructure.Persistance.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<EFContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ThienConnect"));
+});
 
+builder.Services.AddScoped<IWeatherRepository, WeatherRepository>();
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
-builder.Services.AddTransient<IWeatherRepository, WeatherRepository>();
-builder.Services.AddTransient<IRoleRepository, RoleRepository>();
-builder.Services.AddTransient<IAccountRepository, AccountRepository>();
-builder.Services.AddTransient<IProductRepository, ProductRepository>();
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

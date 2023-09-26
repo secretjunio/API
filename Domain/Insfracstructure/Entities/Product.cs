@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace WebApi.Insfracstructure.Entities
+namespace Domain.Insfracstructure.Entities
 {
     public class Product
     {

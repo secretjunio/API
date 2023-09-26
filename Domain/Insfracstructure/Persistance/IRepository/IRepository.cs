@@ -1,6 +1,6 @@
-﻿using WebApi.Insfracstructure.Entities;
+﻿using Domain.Insfracstructure.Entities;
 
-namespace WebApi.Insfracstructure.Persistance.IRepository
+namespace Domain.Insfracstructure.Persistance.IRepository
 {
     public interface IWeatherRepository
     {

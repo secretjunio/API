@@ -1,9 +1,9 @@
 ﻿using System.Runtime.CompilerServices;
-using WebApi.Insfracstructure.DBContext;
-using WebApi.Insfracstructure.Entities;
-using WebApi.Insfracstructure.Persistance.IRepository;
+using Domain.Insfracstructure.DBContext;
+using Domain.Insfracstructure.Entities;
+using Domain.Insfracstructure.Persistance.IRepository;
 
-namespace WebApi.Insfracstructure.Persistance.Repository
+namespace Domain.Insfracstructure.Persistance.Repository
 {
     public class RoleRepository : IRoleRepository
     {

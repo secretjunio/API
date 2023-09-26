@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebApi.Insfracstructure.Entities
+namespace Domain.Insfracstructure.Entities
 {
     [PrimaryKey(nameof(RoleId), nameof(AccountId))]
     public class AccountRole

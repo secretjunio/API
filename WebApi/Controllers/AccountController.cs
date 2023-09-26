@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Security.Cryptography;
 using System.Text;
-using WebApi.Insfracstructure.Entities;
-using WebApi.Insfracstructure.Persistance.IRepository;
+using Domain.Insfracstructure.Entities;
+using Domain.Insfracstructure.Persistance.IRepository;
 
-namespace WebApi.Controllers
+namespace Domain.Controllers
 {
     [ApiController]
     [Route("[controller]")]

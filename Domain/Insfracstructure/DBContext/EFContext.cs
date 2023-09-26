@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebApi.Insfracstructure.Entities;
+using Domain.Insfracstructure.Entities;
 
-namespace WebApi.Insfracstructure.DBContext
+namespace Domain.Insfracstructure.DBContext
 {
     public class EFContext : DbContext
     {

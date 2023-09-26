@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebApi.Insfracstructure.Entities
+namespace Domain.Insfracstructure.Entities
 {
     public class Account
     {

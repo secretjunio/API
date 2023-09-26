@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using WebApi.Insfracstructure.DBContext;
-using WebApi.Insfracstructure.Entities;
-using WebApi.Insfracstructure.Persistance.IRepository;
-using WebApi.Insfracstructure.Persistance.Repository;
+using Domain.Insfracstructure.DBContext;
+using Domain.Insfracstructure.Entities;
+using Domain.Insfracstructure.Persistance.IRepository;
+using Domain.Insfracstructure.Persistance.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
