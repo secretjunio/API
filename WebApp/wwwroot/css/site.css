@@ -1,18 +1,13 @@
-html {
-  font-size: 14px;
+﻿.vertical-menu {
+  left: 0px;
+  width: 250px;
+  background-color: rgb(56, 65, 78);
+  display: none;
 }
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.vertical-menu ul li {
+  list-style: none;
 }
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
+.vertical-menu ul li a {
+  text-decoration: none;
+  color: white;
 }
